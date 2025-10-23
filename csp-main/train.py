@@ -193,7 +193,7 @@ if __name__ == "__main__":
     # set the seed value
     set_seed(config.seed)
 
-    device = torch.device("cuda:1") if torch.cuda.is_available() else torch.device("cpu")
+    device = torch.device("cuda:2") if torch.cuda.is_available() else torch.device("cpu")
 
     print("training details")
     pprint.pprint(config)

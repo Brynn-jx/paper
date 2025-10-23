@@ -70,9 +70,9 @@ class ImageLoader:
         self.img_dir = root
 
     def __call__(self, img):
-        file = '%s/%s' % (self.img_dir, img)
+        # file = '%s/%s' % (self.img_dir, img)
         # 只有训练f-mit时要这么做
-        # file = '%s%s' % (self.img_dir, img)
+        file = '%s%s' % (self.img_dir, img)
         img = Image.open(file).convert('RGB')
         return img
 

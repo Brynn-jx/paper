@@ -83,7 +83,7 @@ def csp_init(
     classes = [cla.replace(".", " ").lower() for cla in allobj]
     attributes = [attr.replace(".", " ").lower() for attr in allattrs]
 
-    # 这段代码批量处理所有属性和类别名称，然后将其在0维拼接起来
+    # 这段代码批量处理所有属性和类别名称，得到token为接下来映射到embedding做准备，然后将其在0维拼接起来
     tokenized = torch.cat(
         [
             clip.tokenize(tok, context_length=config.context_length)

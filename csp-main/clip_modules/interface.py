@@ -104,7 +104,7 @@ class CLIPInterface(torch.nn.Module):
         # # 形状: [batch_size, context_length, 512]
         token_tensors = self.construct_token_tensors(idx)
 
-        # 形状: [batch_size, 512] - batch_size个组合的文本特征向量
+        # 形状: [batch_size, 512] - batch_size个组合的文本特征向量 因为是从每个序列中提取EOS位置的隐藏状态，作为该文本的最终表示向量
         text_features = self.text_encoder(
             self.token_ids,
             token_tensors,

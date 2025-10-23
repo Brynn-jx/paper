@@ -735,7 +735,8 @@ if __name__ == "__main__":
     if config.open_world and config.threshold is None:
         evaluator = Evaluator(val_dataset, model=None)
         feasibility_path = os.path.join(
-            DIR_PATH, f'datasets/data/feasibility_{config.dataset}.pt')
+           DIR_PATH, f'datasets/data/feasibility_{config.dataset}.pt')
+        # feasibility_path = os.path.join('/home/yxd/dataset/F-MIT/feasibility_F-MIT.pt')
         unseen_scores = torch.load(
             feasibility_path,
             map_location='cpu')['feasibility']
