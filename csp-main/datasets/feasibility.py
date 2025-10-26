@@ -90,17 +90,6 @@ def load_glove_embeddings(vocab):
         'tie-dye': 'tie_dye',
         'v-neck':'v_neck',
         'form-fitting':'form_fitting',
-        # f-mit
-        # 物体
-        # 'pantsal':'pants',
-        # 'pantser':'pants',
-        # 'totoilet':'toilet',
-        # 'trtuck':'truck',
-        # 'tshirt':'t_shirt',
-        # 'tulipn':'tulip',
-        # # 属性
-        # 'rrough':'rough',
-        # 'speckuliar':'specular',
 
     }
 

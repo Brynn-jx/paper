@@ -93,6 +93,7 @@ class COOP(CLIPInterface):
         )
         self.frozen_embeddings = frozen_embeddings
         self.offset = offset
+        self.frozen_embeddings = self.frozen_embeddings.to(device)
 
     def construct_token_tensors(self, pair_idx):
         attr_idx, obj_idx = pair_idx[:, 0], pair_idx[:, 1]
